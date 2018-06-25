@@ -9,7 +9,7 @@ require __DIR__ . '/BaseDataSourceTest.phpt';
 final class DibiFluentDataSourceTest extends BaseDataSourceTest
 {
 	/**
-	 * @var \DibiConnection
+	 * @var \Dibi\Connection
 	 */
 	private $db;
 

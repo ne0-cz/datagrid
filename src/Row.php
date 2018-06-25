@@ -8,7 +8,7 @@
 
 namespace Ublaboo\DataGrid;
 
-use DibiRow;
+use Dibi\Row as DibiRow;
 use LeanMapper;
 use Nette;
 use Nette\Database\Table\ActiveRow;

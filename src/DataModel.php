@@ -9,7 +9,7 @@
 namespace Ublaboo\DataGrid;
 
 use Dibi;
-use DibiFluent;
+use Dibi\Fluent;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\QueryBuilder;
 use Nette\SmartObject;
@@ -64,7 +64,7 @@ final class DataModel
 		} elseif (is_array($source)) {
 			$source = new DataSource\ArrayDataSource($source);
 
-		} elseif ($source instanceof Dibi\Fluent || $source instanceof DibiFluent) {
+		} elseif ($source instanceof Fluent) {
 			$driver = $source->getConnection()->getDriver();
 
 			if ($driver instanceof Dibi\Drivers\OdbcDriver) {
